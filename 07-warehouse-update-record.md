@@ -137,7 +137,9 @@
     ```
 6. Tambahkan kode program untuk menangani request `POST` (form disubmit).
     ```php
-    // if the form was submitted
+    ...
+    <!-- Kode apabila form disubmit -->
+    <?
     if($_POST){
      
         // set product property values
@@ -163,6 +165,8 @@
             echo "</div>";
         }
     }
+    ?>
+    ...
     ```
 7. Tambahkan fungsi `update` pada file `objects/product.php`.
     ```php
