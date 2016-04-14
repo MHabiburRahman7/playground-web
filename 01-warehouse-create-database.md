@@ -25,7 +25,8 @@
     ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
     ```
 4. Isikan data baru ke dalam tabel `products`.
-    ```sql
+
+    ```
     INSERT INTO `products` VALUES(1, 'LG P880 4X HD', 'My first awesome phone!', 336, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
     INSERT INTO `products` VALUES(2, 'Google Nexus 4', 'The most awesome phone of 2013!', 299, 2, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
     INSERT INTO `products` VALUES(3, 'Samsung Galaxy S4', 'How about no?', 600, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
@@ -37,9 +38,10 @@
     INSERT INTO `products` VALUES(11, 'Huawei Y300', 'For testing purposes.', 100, 2, '2014-06-06 17:11:04', '2014-06-06 02:10:54');
     INSERT INTO `products` VALUES(12, 'Abercrombie Lake Arnold Shirt', 'Perfect as gift!', 60, 1, '2014-06-06 17:12:21', '2014-06-06 02:12:11');
     INSERT INTO `products` VALUES(13, 'Abercrombie Allen Brook Shirt', 'Cool red shirt!', 70, 1, '2014-06-06 17:12:59', '2014-06-06 02:12:49');
-    ```
+    ```    
 5. Isikan data baru ke dalam tabel `categories`.
-    ```sql
+
+    ```
     INSERT INTO `categories` VALUES(1, 'Fashion', '2014-06-01 00:35:07', '2014-05-31 09:34:33');
     INSERT INTO `categories` VALUES(2, 'Electronics', '2014-06-01 00:35:07', '2014-05-31 09:34:33');
     INSERT INTO `categories` VALUES(3, 'Motors', '2014-06-01 00:35:07', '2014-05-31 09:34:54');
