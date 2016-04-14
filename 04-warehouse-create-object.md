@@ -111,7 +111,7 @@
   
       // used for the 'created' field when creating a product
       function getTimestamp(){
-          date_default_timezone_set('Asia/Manila');
+          date_default_timezone_set('Asia/Jakarta');
           $this->timestamp = date('Y-m-d H:i:s');
       }
   }
