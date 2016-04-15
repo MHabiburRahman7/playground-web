@@ -14,7 +14,12 @@
    $db = $database->getConnection();
    ?>
    
+   <!--Area memproses POST form-->
+   
    <!--Area button Read Products-->
+   
+   <!--Area Form-->
+   
    
    <?php
    include_once "footer.php";
@@ -25,6 +30,7 @@
 3. Tambahkan button **Read Products** di antara _header_ dan _footer_.
    ```html
    ...
+   <!--Area button Read Products-->
    
    <div class="right-button-margin">
        <a href="index.php" class="btn btn-default pull-right">Read Products</a>
@@ -35,6 +41,7 @@
 
 4. Tambahkan form untuk memasukkan informasi produk baru. Letakkan form ini di bawah button **Read Products**.
    ```html
+   <!--Area Form-->
    <form action="create_product.php" method="post">
        <table class="table table-hover table-responsive table-bordered">
            <tr>
@@ -95,6 +102,8 @@
    ```
 6. Tambahkan kode berikut di atas `<form>` input untuk menangani form yang telah di-post.
    ```php
+   <!--Area memproses POST form-->
+   
    <?php
    // if the form was submitted
    if($_POST){
