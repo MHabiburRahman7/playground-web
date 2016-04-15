@@ -13,6 +13,12 @@
     
     ?>
     
+    <!--Button Create Product-->
+    
+    <!--Content area-->
+    
+    <!--Paging area-->
+    
     <!-- Script untuk delete product -->
     <?
     include_once "footer.php";
@@ -21,6 +27,7 @@
 3. Tambahkan button **Create Product** di antara bagian header dan footer.
     ```php
     ...
+    <!--Button Create Product-->
     
     <div class="right-button-margin">
         <a href="create_product.php" class="btn btn-default pull-right">Create Product</a>
@@ -30,6 +37,8 @@
     ```
 4. Tambahkan pengaturan _pagination_ dan konten tabel data `products` yang akan ditampilkan di bawah button **Create Product**
     ```php
+    <!--Content area-->
+    
     <?php
     // Tambahkan pagination
     $page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -76,7 +85,7 @@
                 echo $category->name;
             echo '</td>';
             echo '  <td>';
-            // edit dan delete button
+                <!--Edit dan Delete button-->
             echo '</td>';
             echo '</tr>';
         }
@@ -95,7 +104,7 @@
 5. Tambahkan button **Edit** dan **Delete** di bagian _comment_ pada kode program sebelumnya.
     ```php
     ...
-    
+        <!--Edit dan Delete button-->
         echo '<a href="update_product.php?id='.$id.'" class="btn btn-default left-margin">Edit</a>';
         echo '<a delete-id="'.$id.'" class="btn btn-danger delete-object">Delete</a>';
     
@@ -160,7 +169,7 @@
 3. Tambahkan fungsi `countAll` pada `objects/product.php`
     ```php
     ...
-    // used for paging products
+        // used for paging products
         public function countAll(){
          
             $query = "SELECT id FROM " . $this->table_name . "";
@@ -177,7 +186,7 @@
 4. _Include_-kan `paging_product.php` di dalam file `index.php` pada bagian comment `// paging buttons here`.
     ```php
     ...
-    // paging buttons here
+    <!--Paging area-->
     include_once 'paging_product.php';
     ...
     ```
