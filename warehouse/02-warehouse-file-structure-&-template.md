@@ -51,3 +51,4 @@
     </body>
     </html>
     ```
+3. Copy-kan file `css/*` dan `js/*` dari repo ini ke dalam folder kalian.
