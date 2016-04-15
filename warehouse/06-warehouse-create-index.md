@@ -183,11 +183,11 @@
         }
     ...
     ```
-4. _Include_-kan `paging_product.php` di dalam file `index.php` pada bagian comment `// paging buttons here`.
-    ```php
-    ...
-    <!--Paging area-->
-    include_once 'paging_product.php';
-    ...
-    ```
+4. _Include_-kan `paging_product.php` di dalam file `index.php` pada bagian comment `<!--Paging area-->`.
+        ```php
+        ...
+        <!--Paging area-->
+        include_once 'paging_product.php';
+        ...
+        ```
 5. Jalankan aplikasi untuk melihat hasilnya.
